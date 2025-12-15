@@ -1,0 +1,40 @@
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+
+# ---- Unity project ----
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+
+# ---- IDE / tooling ----
+.vs/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ---- Generated data ----
+*.apk
+*.aab
+*.unitypackage
+*.stackdump
+
+# ---- Local duplicates / exports ----
+My project (1)/
+
