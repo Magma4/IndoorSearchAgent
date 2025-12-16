@@ -17,24 +17,3 @@ An indoor navigation system concept that pairs a Unity Universal Render Pipeline
 1) Open Unity (check `ProjectSettings` for the exact version).
 2) Open the `model` folder as the Unity project root.
 3) Work in `Assets/Scenes/PrimaryScene.unity` for visuals and interaction.
-
-## Build checklist
-
-### Graph node placement
-- [ ] **Place room nodes**: Create empty GameObjects at the center of each room, add `GraphNode` component, set type to "Room", name the room
-- [ ] **Place door nodes**: Create empty GameObjects at each doorway, add `GraphNode` component, set type to "Door", assign room name
-- [ ] **Connect nodes**: In each GraphNode's inspector, drag connected nodes into the "Connected Nodes" array (doors connect to adjacent rooms, rooms connect to their doors)
-- [ ] **Add GraphManager**: Create an empty GameObject in scene, add `GraphManager` component - it will auto-find all nodes
-- [ ] **Verify connections**: Use Scene view gizmos to see node connections (yellow lines)
-
-### Navigation & pathfinding
-- [ ] Add basic player/camera controller for navigation
-- [ ] Test graph export (GraphManager.ExportGraphToJson()) to verify node structure
-- [ ] Create local API stub for pathfinding requests
-- [ ] Implement path visualization (draw lines/arrows along route)
-
-### Backend integration
-- [ ] Define request/response schema for route queries
-- [ ] Implement Python inference service with A* pathfinding
-- [ ] Wire Unity client to call Python backend
-- [ ] Add RL policy integration to pathfinding
